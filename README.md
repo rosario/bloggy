@@ -1,3 +1,7 @@
+#Note
+
+Simple fork, it **only** changes from 'config/jekyll' to 'blog/jekyll' and add a **namespace** 'jekyll' in the Rake tasks.
+
 # Bloggy
 
 Bloggy is a simple gem that helps you generate a jekyll blog within your rails application by using generator commands similar to the ones you are used to already.
