@@ -12,7 +12,7 @@ require 'rails/generators/actions'
 class TestGenerateBlog < Test::Unit::TestCase
     context "creating blog" do
         should "genearte blog" do
-            source = 'config/jekyll'
+            source = 'blog/jekyll'
             destination = 'blog'
             #Rails::Generators::Actions.generate('jekyll', '')
             Jekyll::Rails::JekyllGenerator.new.copy_initializer_file
