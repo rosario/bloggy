@@ -1,6 +1,8 @@
-desc 'Run Jekyll in blog/jekyll directory without having to cd there'''
-task :generate do
-  Dir.chdir("blog/jekyll") do
-    system('jekyll')
+namespace :jekyll do
+  desc 'Run Jekyll in blog/jekyll directory without having to cd there'''
+  task :generate do
+    Dir.chdir("blog/jekyll") do
+      system('jekyll')
+    end
   end
 end
