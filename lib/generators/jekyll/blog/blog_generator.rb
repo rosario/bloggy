@@ -3,15 +3,15 @@ class Jekyll::BlogGenerator < Rails::Generators::NamedBase
     argument :name, :type => :string, :default => "blog"
 
     def copy_config_file
-        copy_file 'blog/jekyll/_config.yml.tt', 'blog/jekyll/_config.yml'
-        copy_file 'blog/jekyll/atom.xml.tt', 'blog/jekyll/atom.xml'
-        copy_file 'blog/jekyll/index.html.tt', 'blog/jekyll/index.html'
-        copy_file 'blog/jekyll/_layouts/default.html.tt', 'blog/jekyll/_layouts/default.html'
-        copy_file 'blog/jekyll/_layouts/page.html.tt', 'blog/jekyll/_layouts/page.html'
-        copy_file 'blog/jekyll/_layouts/post.html.tt', 'blog/jekyll/_layouts/post.html'
-        copy_file 'blog/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'blog/jekyll/_posts/2012-04-25-a-test-post.markdown'
-        copy_file 'blog/jekyll/css/screen.css.tt', 'blog/jekyll/css/screen.css'
-        copy_file 'blog/jekyll/css/syntax.css.tt', 'blog/jekyll/css/syntax.css'
+        copy_file 'config/jekyll/_config.yml.tt', 'blog/jekyll/_config.yml'
+        copy_file 'config/jekyll/atom.xml.tt', 'blog/jekyll/atom.xml'
+        copy_file 'config/jekyll/index.html.tt', 'blog/jekyll/index.html'
+        copy_file 'config/jekyll/_layouts/default.html.tt', 'blog/jekyll/_layouts/default.html'
+        copy_file 'config/jekyll/_layouts/page.html.tt', 'blog/jekyll/_layouts/page.html'
+        copy_file 'config/jekyll/_layouts/post.html.tt', 'blog/jekyll/_layouts/post.html'
+        copy_file 'config/jekyll/_posts/2012-04-25-a-test-post.markdown.tt', 'blog/jekyll/_posts/2012-04-25-a-test-post.markdown'
+        copy_file 'config/jekyll/css/screen.css.tt', 'blog/jekyll/css/screen.css'
+        copy_file 'config/jekyll/css/syntax.css.tt', 'blog/jekyll/css/syntax.css'
         copy_file 'tasks/new_post.rake.tt', 'lib/tasks/new_post.rake'
         copy_file 'tasks/gen.rake.tt', 'lib/tasks/gen.rake'
     end
